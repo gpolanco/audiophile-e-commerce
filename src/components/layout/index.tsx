@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React, { FC } from 'react';
 
-import styles from './layout.module.css';
+import styles from './layout.module.scss';
 
 interface ILayoutProps {}
 
