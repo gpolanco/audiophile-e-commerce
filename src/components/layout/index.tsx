@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import React, { FC } from 'react';
+import { Footer } from './Footer';
+import { Header } from './header';
 
 import styles from './layout.module.scss';
 
@@ -17,9 +19,9 @@ export const Layout: FC<ILayoutProps> = ({ children }) => {
                 ></link>
                 <title>Frontend Mentor | Audiophile e-commerce website</title>
             </Head>
-            <header className={styles.header}>HEADER</header>
+            <Header />
             <main className={styles.main}>{children}</main>
-            <footer className={styles.footer}>FOOOTER</footer>
+            <Footer />
         </div>
     );
 };
