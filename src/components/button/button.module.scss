@@ -1,0 +1,80 @@
+@import '~/styles/variables';
+
+.button {
+    display: inline-flex;
+    width: 100%;
+    min-width: max-content;
+    max-width: $button-max-width;
+    height: $button-height;
+    align-items: center;
+    justify-content: center;
+    padding: 0 $button-padding-x;
+    border: 1px solid $color-base-transparent;
+    cursor: pointer;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing-wider;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.primary {
+    background-color: $color-brand-primary;
+    color: $color-base-white;
+
+    &:hover {
+        background-color: $color-brand-primary-light;
+    }
+}
+
+.primary-invert {
+    background-color: $color-brand-primary-light;
+    color: $color-base-white;
+
+    &:hover {
+        background-color: $color-brand-primary;
+    }
+}
+
+.secondary {
+    background-color: $color-base-white;
+    color: $color-brand-secondary;
+    border-color: $color-brand-secondary;
+
+    &:hover {
+        background-color: $color-brand-secondary;
+        color: $color-base-white;
+    }
+}
+
+.secondary-invert {
+    background-color: $color-brand-secondary;
+    color: $color-base-white;
+    border-color: $color-brand-secondary;
+
+    &:hover {
+        background-color: $color-base-black;
+        color: $color-base-white;
+    }
+}
+
+.tertiary {
+    color: $color-gray-500;
+    background-color: transparent;
+
+    &:hover {
+        color: $color-brand-primary;
+    }
+}
+
+.tertiary-invert {
+    color: $color-brand-primary;
+    background-color: transparent;
+
+    &:hover {
+        color: $color-gray-500;
+    }
+}

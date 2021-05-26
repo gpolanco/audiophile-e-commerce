@@ -1,0 +1,107 @@
+{
+    "colors": [
+        {
+            "hex": "#D87D4A",
+            "rgb": "216, 125, 74",
+            "hsl": "22°, 65%, 57%"
+        },
+        {
+            "hex": "#101010",
+            "rgb": "16, 16, 16",
+            "hsl": "0°, 0%, 6%"
+        },
+        {
+            "hex": "#F1F1F1",
+            "rgb": "241, 241, 241",
+            "hsl": "0°, 0%, 95%"
+        },
+        {
+            "hex": "#FAFAFA",
+            "rgb": "250, 250, 250",
+            "hsl": "0°, 0%, 98%"
+        },
+        {
+            "hex": "#fbaf85",
+            "rgb": "251, 175, 133",
+            "hsl": "21°, 94%, 75%"
+        },
+        {
+            "hex": "#FFFFFF",
+            "rgb": "255, 255, 255",
+            "hsl": "0°, 0%, 100%"
+        },
+        {
+            "hex": "#000000",
+            "rgb": "0, 0, 0",
+            "hsl": "0°, 0%, 0%"
+        }
+    ],
+    "typography": {
+        "name": "MANROPE",
+        "characters":"ABDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+",
+        "headings": [
+            {
+                "tag": "h1",
+                "text": "Morbi interdum mollis sapien",
+                "settings": "H1 - Manrope Bold - 56px (All Caps, 58px Line Space, 2px Char. Space)"
+            },
+            {
+                "tag": "h2",
+                "text": "Donec nec justo eget felis facilisis",
+                "settings": "H2 - Manrope Bold - 40px (All Caps, 44px Line Space, 1,5px Char. Space)"
+            },
+            {
+                "tag": "h3",
+                "text": "Nunc sem lacus accum",
+                "settings": "H3 - Manrope Bold - 32px (All Caps, 36px Line Space, 1,15px Char. Space)"
+            },
+            {
+                "tag": "h4",
+                "text": "interdum consectetuer",
+                "settings": "H4 - Manrope Bold - 28px (All Caps, 38px Line Space, 2px Char. Space)"
+            },
+            {
+                "tag": "h5",
+                "text": "nascetur ridiculus mus",
+                "settings": "H5 - Manrope Bold - 24px (All Caps, 33px Line Space, 1,7px Char. Space)"
+            },
+            {
+                "tag": "h6",
+                "text": "natoque penatibus et",
+                "settings": "H6 - Manrope Bold - 18px (All Caps, 24px Line Space, 1,3px Char. Space)"
+            }
+        ]
+    },
+    "buttons": [
+        {
+            "color": "primary",
+            "text": "See product",
+            "label": "Button 1 default"
+        },
+         {
+            "color": "secondary",
+            "text": "See product",
+            "label": "Button 2 default"
+        },
+         {
+            "color": "tertiary",
+            "text": "See product",
+            "label": "Button 3 default"
+        },
+        {
+            "color": "primary-invert",
+            "text": "See product",
+            "label": "Button 1 Hover"
+        },
+         {
+            "color": "secondary-invert",
+            "text": "See product",
+            "label": "Button 2 Hover"
+        },
+         {
+            "color": "tertiary-invert",
+            "text": "See product",
+            "label": "Button 3 Hover"
+        }
+    ]
+}

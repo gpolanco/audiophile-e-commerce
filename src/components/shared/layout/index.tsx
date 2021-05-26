@@ -9,7 +9,7 @@ interface ILayoutProps {}
 
 export const Layout: FC<ILayoutProps> = ({ children }) => {
     return (
-        <div className={styles.container}>
+        <div className={styles.wrapper}>
             <Head>
                 <link
                     rel="icon"

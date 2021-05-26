@@ -2,8 +2,7 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: $font-family-base;
     font-size: $body-font-size;
 }
 
@@ -14,4 +13,83 @@ a {
 
 * {
     box-sizing: border-box;
+    animation: all 0.3s ease-in-out;
+}
+
+.container {
+    padding: 0 $container-padding-x;
+
+    @include media-breakpoint-up(sm) {
+        max-width: $container-max-width;
+        margin: auto;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    color: $color-base-black;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+}
+
+h1,
+.h1 {
+    font-size: $h1-font-size;
+    line-height: $h1-line-height;
+    letter-spacing: $h1-letter-spacing;
+}
+
+h2,
+.h2 {
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+    letter-spacing: $h2-letter-spacing;
+}
+
+h3,
+.h3 {
+    font-size: $h3-font-size;
+    line-height: $h3-line-height;
+    letter-spacing: $h3-letter-spacing;
+}
+
+h4,
+.h4 {
+    font-size: $h4-font-size;
+    line-height: $h4-line-height;
+    letter-spacing: $h4-letter-spacing;
+}
+
+h5,
+.h5 {
+    font-size: $h5-font-size;
+    line-height: $h5-line-height;
+    letter-spacing: $h5-letter-spacing;
+}
+
+h6,
+.h6 {
+    font-size: $h6-font-size;
+    line-height: $h6-line-height;
+    letter-spacing: $h6-letter-spacing;
+}
+
+.text-primary {
+    color: $color-brand-primary;
+}
+.text-danger {
+    color: $color-brand-danger;
+}
+.text-muted {
+    color: $color-brand-gray-dark;
 }

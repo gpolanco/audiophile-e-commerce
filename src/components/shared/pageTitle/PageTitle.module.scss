@@ -1,0 +1,18 @@
+@import '~/styles/variables';
+
+.wrapper {
+    align-items: center;
+    background-color: $color-brand-secondary;
+    border-top: solid 1px $color-gray-100;
+    color: $color-base-white;
+    display: flex;
+    font-size: $h4-font-size;
+    height: 100px;
+    justify-content: center;
+    margin: 0;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(sm) {
+        font-size: $h2-font-size;
+    }
+}

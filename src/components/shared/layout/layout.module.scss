@@ -1,0 +1,17 @@
+@import '~/styles/variables';
+
+.wrapper {
+    min-height: 100vh;
+    font-size: $font-size-md;
+    font-weight: $font-weight-medium;
+}
+
+.main {
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    background-color: $color-brand-secondary;
+    color: $color-base-white;
+}
