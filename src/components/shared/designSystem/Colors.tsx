@@ -1,16 +1,17 @@
 import React, { FC } from 'react';
-import { colors as colorList } from './data.json';
-
 import styles from './desingSystem.module.scss';
 
+import { default as data } from './data.json';
+
+const { colors } = data;
 export const Colors: FC = () => {
     return (
-        <>
+        <div className={styles.section}>
             <h4>
                 <span className="text-primary">01</span> Colors
             </h4>
             <div className={styles.colors}>
-                {colorList.map(color => (
+                {colors.map(color => (
                     <div key={color.hex} className={styles.color}>
                         <div
                             className={styles['color-swatch']}
@@ -33,6 +34,6 @@ export const Colors: FC = () => {
                     </div>
                 ))}
             </div>
-        </>
+        </div>
     );
 };

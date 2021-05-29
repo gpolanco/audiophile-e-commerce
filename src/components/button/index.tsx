@@ -3,6 +3,8 @@ import classNames from 'classnames';
 
 import styles from './button.module.scss';
 import { ButtonColorType } from './types';
+import { ArrowIcon } from '../icons';
+import { PlusIcon } from '../icons/PlusIcon';
 
 interface IButtonProps {
     color?: ButtonColorType;
@@ -26,6 +28,7 @@ export const Button: FC<IButtonProps> = ({
             })}
         >
             {children}
+            <ArrowIcon className={styles.icon} />
         </button>
     );
 };

@@ -1,0 +1,41 @@
+@import '~/styles/variables';
+
+.wrapper {
+    background-color: $color-brand-gray;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    text-align: center;
+}
+
+.button {
+    height: 48px;
+    border: none;
+    padding: 0 1.8rem;
+    cursor: pointer;
+
+    .icon {
+        fill: $color-brand-gray-dark;
+    }
+
+    &:hover,
+    &:active {
+        .icon {
+            fill: $color-brand-primary;
+        }
+    }
+}

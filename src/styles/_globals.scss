@@ -84,6 +84,15 @@ h6,
     letter-spacing: $h6-letter-spacing;
 }
 
+select {
+    height: $input-height * 0.8;
+    width: 300px;
+    border-color: $input-border-color;
+    border-radius: $input-border-radius;
+    color: $input-text-color;
+    padding: 1rem;
+}
+
 .text-primary {
     color: $color-brand-primary;
 }
@@ -92,4 +101,24 @@ h6,
 }
 .text-muted {
     color: $color-brand-gray-dark;
+}
+.text-center {
+    text-align: center;
+}
+.overline {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    letter-spacing: 10px;
+}
+.sub-title {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.icon-primary {
+    stroke: $color-brand-primary;
 }

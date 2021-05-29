@@ -1,11 +1,12 @@
 import React, { FC } from 'react';
+import classNames from 'classnames';
 
-import { buttons as buttonList } from './data.json';
 import { Button } from '~/components/button';
 import styles from './desingSystem.module.scss';
 import { ButtonColorType } from '~/components/button/types';
-import classNames from 'classnames';
 
+import { default as data } from './data.json';
+const { buttons } = data;
 export const Buttons: FC = () => {
     return (
         <div className={styles.section}>
@@ -13,7 +14,7 @@ export const Buttons: FC = () => {
                 <span className="text-primary">03</span> Buttons
             </h4>
             <div className={styles.buttons}>
-                {buttonList.map(button => (
+                {buttons.map(button => (
                     <div className={styles.button}>
                         <Button
                             color={button.color as ButtonColorType}

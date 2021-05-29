@@ -1,0 +1,121 @@
+@import '~/styles/variables';
+
+@mixin inputProprties {
+    height: $input-height;
+    background-color: $input-background;
+    border-radius: $input-border-radius;
+    border: solid 1px $input-border-color;
+    color: $input-text-color;
+    padding: 0 $input-padding-x;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    max-width: $input-max-width;
+}
+
+.label {
+    display: block;
+    color: $input-label-color;
+    order: -1;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    font-size: $input-label-font-size;
+}
+.label-text {
+    display: inline-block;
+}
+
+.input {
+    @include inputProprties();
+
+    &::placeholder {
+        font-size: 1.4rem;
+        color: $input-placeholder-color;
+    }
+
+    &:focus,
+    &:active,
+    .active {
+        border-color: $input-border-color-active;
+    }
+}
+
+// RADIO INPUT
+.radio-group {
+    .label {
+        @include inputProprties();
+        user-select: none;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-size: 1.4rem;
+        cursor: pointer;
+
+        &:hover,
+        &:active {
+            border-color: $input-border-color-active;
+        }
+
+        .mark {
+            content: '';
+            display: flex;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border-radius: $border-radius-full;
+            border: solid 1px $input-border-color;
+            margin-right: 1.6rem;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+
+            &::after {
+                content: '';
+                opacity: 0;
+            }
+        }
+
+        .label-text {
+            width: 100%;
+        }
+    }
+
+    .input {
+        width: 0;
+        height: 0;
+        display: none;
+
+        &:checked + .label {
+            border-color: $input-border-color-active;
+            .mark {
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    background-color: $color-brand-primary;
+                    border-radius: $border-radius-full;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.is-invalid {
+    .label {
+        color: $color-brand-danger;
+        display: flex;
+    }
+    .input {
+        border-color: $color-brand-danger;
+    }
+
+    .error {
+        margin-left: auto;
+    }
+}

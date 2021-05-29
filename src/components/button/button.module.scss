@@ -21,6 +21,11 @@
     outline: none;
 }
 
+.icon {
+    display: none;
+    stroke: $color-brand-primary;
+}
+
 .primary {
     background-color: $color-brand-primary;
     color: $color-base-white;
@@ -56,8 +61,8 @@
     border-color: $color-brand-secondary;
 
     &:hover {
-        background-color: $color-base-black;
-        color: $color-base-white;
+        background-color: transparent;
+        color: $color-base-black;
     }
 }
 
@@ -65,8 +70,19 @@
     color: $color-gray-500;
     background-color: transparent;
 
+    .icon {
+        display: block;
+        display: inline-block;
+        margin-left: 1.3rem;
+        stroke: $color-gray-500;
+    }
+
     &:hover {
         color: $color-brand-primary;
+
+        .icon {
+            stroke: $color-brand-primary;
+        }
     }
 }
 
@@ -74,7 +90,17 @@
     color: $color-brand-primary;
     background-color: transparent;
 
+    .icon {
+        display: block;
+        display: inline-block;
+        margin-left: 1.3rem;
+        stroke: $color-brand-primary;
+    }
+
     &:hover {
         color: $color-gray-500;
+        .icon {
+            stroke: $color-gray-500;
+        }
     }
 }
