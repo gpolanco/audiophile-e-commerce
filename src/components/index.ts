@@ -1,1 +1,1 @@
-export * from './shared/layout';
+export * from './layout';
