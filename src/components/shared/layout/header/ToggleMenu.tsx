@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { MenuIcon } from '~/components/icons/MenuIcon';
 
 import styles from './header.module.scss';

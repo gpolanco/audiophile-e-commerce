@@ -12,7 +12,9 @@ export const Header: FC = () => {
         <header className={styles.wrapper}>
             <div className={styles.content}>
                 <ToggleMenu />
-                <Logo />
+                <div className={styles.logo}>
+                    <Logo />
+                </div>
                 <ToggleShopingCar />
                 <Menu />
             </div>

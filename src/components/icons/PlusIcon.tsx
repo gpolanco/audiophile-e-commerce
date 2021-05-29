@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { IconColorMap, IIconProps } from './types';
 
 export const PlusIcon: FC<IIconProps> = ({ color, className }) => {

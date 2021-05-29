@@ -1,10 +1,4 @@
-import React, {
-    FC,
-    InputHTMLAttributes,
-    useEffect,
-    useRef,
-    useState
-} from 'react';
+import { FC, InputHTMLAttributes, useEffect, useRef, useState } from 'react';
 import classNames from 'classnames';
 
 import { MinusIcon, PlusIcon } from '../icons';

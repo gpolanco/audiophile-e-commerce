@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import styles from './desingSystem.module.scss';
 
 import { default as data } from './data.json';

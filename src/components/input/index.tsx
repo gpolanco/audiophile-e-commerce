@@ -1,4 +1,4 @@
-import React, { FC, InputHTMLAttributes } from 'react';
+import { FC, InputHTMLAttributes } from 'react';
 import classNames from 'classnames';
 
 import styles from './input.module.scss';

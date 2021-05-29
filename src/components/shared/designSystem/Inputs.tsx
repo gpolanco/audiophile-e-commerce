@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import { FC, useState } from 'react';
 import { Input } from '~/components/input';
 import { SpinnerNumber } from '~/components/input/SpinnerNumber';
 import { InputSpinnerNumber } from '~/components/inputNumber';

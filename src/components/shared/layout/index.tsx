@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import React, { FC } from 'react';
-import { Footer } from './Footer';
+import { FC } from 'react';
+import { Footer } from './footer';
 import { Header } from './header';
 
 import styles from './layout.module.scss';

@@ -1,4 +1,4 @@
-import React, { SyntheticEvent, FC, useState } from 'react';
+import { SyntheticEvent, FC, useState } from 'react';
 import {
     ArrowIcon,
     FacebookIcon,

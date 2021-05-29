@@ -1,0 +1,123 @@
+@import '~/styles/variables';
+
+.wrapper {
+    background-color: $color-base-black;
+    color: $color-base-white;
+    text-align: left;
+    position: relative;
+}
+
+.footer-line {
+    width: 10rem;
+    height: 4px;
+    background-color: $color-brand-primary;
+    margin: auto;
+
+    @include media-breakpoint-up(md) {
+        margin: 0;
+    }
+}
+
+.inner-content {
+    padding: 5.5rem 0;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        text-align: left;
+    }
+}
+.top {
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    margin-bottom: 3rem;
+}
+
+.menu {
+    list-style: none;
+    margin: 0 0 4rem 0;
+    padding: 0;
+
+    @include media-breakpoint-up(md) {
+        display: flex;
+    }
+}
+
+.menu-item {
+    @include media-breakpoint-up(md) {
+        text-align: left;
+    }
+}
+.menu-link {
+    display: block;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 25px;
+
+    @include media-breakpoint-up(md) {
+        padding: 0 3rem;
+    }
+
+    &:hover {
+        color: $color-brand-primary;
+    }
+}
+
+.menu-item {
+    &:first-child {
+        .menu-link {
+            padding-left: 0;
+        }
+    }
+}
+
+.paragraph {
+    font-size: 1.5rem;
+    line-height: 25px;
+    margin-bottom: 4rem;
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+    }
+}
+
+.description {
+    font-size: 1.5rem;
+    line-height: 25px;
+    margin-bottom: 4rem;
+
+    @include media-breakpoint-up(md) {
+        width: 50%;
+    }
+}
+
+.social-icons {
+    svg {
+        margin: 0 1rem;
+        cursor: pointer;
+        fill: white;
+
+        &:hover {
+            fill: $color-brand-primary;
+        }
+    }
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-up(md) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
