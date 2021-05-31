@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { ShoppingCarIcon } from '~/components/icons/ShoppingCarIcon';
+import { ShoppingCarIcon } from '~/components/shared/icons';
 
 import styles from './header.module.scss';
 

@@ -1,8 +1,12 @@
 import { FC } from 'react';
-import { Buttons, Colors, Typography } from '~/components/shared/designSystem';
-import { IconList } from '~/components/shared/designSystem/IconList';
-import { Inputs } from '~/components/shared/designSystem/Inputs';
-import { PageTitle } from '~/components/shared/pageTitle';
+import {
+    PageTitle,
+    Inputs,
+    IconList,
+    Buttons,
+    Colors,
+    Typography
+} from '~/components/shared';
 
 const DesignSystem: FC = () => {
     return (

@@ -8,8 +8,8 @@ import {
     PlusIcon,
     ShoppingCarIcon,
     TwitterIcon
-} from '~/components/icons';
-import { IconColorMap, IconColorType } from '~/components/icons/types';
+} from '~/components/shared/icons';
+import { IconColorMap, IconColorType } from '~/components/shared/icons/types';
 
 import styles from './desingSystem.module.scss';
 

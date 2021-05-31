@@ -1,0 +1,45 @@
+@import '~/styles/variables';
+
+.wrapper {
+    width: 100%;
+    text-align: center;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 2.5rem auto;
+}
+
+.image {
+    position: relative;
+    margin: 0;
+    margin-bottom: -105px;
+}
+
+.title {
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 1.07px;
+    font-weight: bold;
+    margin-bottom: 1.7rem;
+}
+.link {
+    color: $color-brand-gray-dark;
+
+    &:hover {
+        text-decoration: none;
+
+        .image {
+            transform: translateY(5px);
+        }
+    }
+
+    svg {
+        margin-left: 1rem;
+    }
+}
+.inner-content {
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    background-color: $color-brand-gray;
+    border-radius: 8px;
+}

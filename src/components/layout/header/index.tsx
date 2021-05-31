@@ -1,12 +1,12 @@
 import { FC, useState } from 'react';
+import classNames from 'classnames';
 
 import { Logo } from './Logo';
 import { Menu } from '../menu';
 import { ToggleShopingCar } from './ToggleShopingCar';
+import { MenuIcon } from '~/components/shared/icons';
 
 import styles from './header.module.scss';
-import { MenuIcon } from '~/components/icons';
-import classNames from 'classnames';
 
 export const Header: FC = () => {
     const [isMenuOpen, toggleMenu] = useState(false);

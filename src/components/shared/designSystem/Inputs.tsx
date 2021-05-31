@@ -1,13 +1,9 @@
 import { FC, useState } from 'react';
-import { Input } from '~/components/input';
-import { SpinnerNumber } from '~/components/input/SpinnerNumber';
-import { InputSpinnerNumber } from '~/components/inputNumber';
+import { InputSpinnerNumber, Input } from '~/components/shared';
 
 import styles from './desingSystem.module.scss';
 
-interface IInputsProps {}
-
-export const Inputs: FC<IInputsProps> = ({ children }) => {
+export const Inputs: FC = () => {
     const [radioValue, sertRadioValue] = useState('radio1');
     return (
         <div className={styles.section}>

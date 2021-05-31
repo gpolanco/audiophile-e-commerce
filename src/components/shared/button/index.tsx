@@ -9,12 +9,14 @@ import { PlusIcon } from '../icons/PlusIcon';
 interface IButtonProps {
     color?: ButtonColorType;
     className?: string;
+    isBlock?: boolean;
 }
 
 export const Button: FC<IButtonProps> = ({
     color = 'primary',
     className,
-    children
+    children,
+    isBlock
 }) => {
     return (
         <button
@@ -24,7 +26,8 @@ export const Button: FC<IButtonProps> = ({
                 [styles.secondary]: color === 'secondary',
                 [styles['secondary-invert']]: color === 'secondary-invert',
                 [styles.tertiary]: color === 'tertiary',
-                [styles['tertiary-invert']]: color === 'tertiary-invert'
+                [styles['tertiary-invert']]: color === 'tertiary-invert',
+                [styles.isBlock]: isBlock
             })}
         >
             {children}

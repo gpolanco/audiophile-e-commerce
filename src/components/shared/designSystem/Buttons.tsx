@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import classNames from 'classnames';
 
-import { Button } from '~/components/button';
+import { Button } from '~/components/shared/button';
 import styles from './desingSystem.module.scss';
-import { ButtonColorType } from '~/components/button/types';
+import { ButtonColorType } from '~/components/shared/button/types';
 
 import { default as data } from './data.json';
 const { buttons } = data;

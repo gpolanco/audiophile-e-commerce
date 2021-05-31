@@ -2,7 +2,11 @@ import { FC } from 'react';
 import classNames from 'classnames';
 import Link from 'next/link';
 
-import { FacebookIcon, InstagramIcon, TwitterIcon } from '~/components/icons';
+import {
+    FacebookIcon,
+    InstagramIcon,
+    TwitterIcon
+} from '~/components/shared/icons';
 import { Logo } from '../header/Logo';
 
 import styles from './Footer.module.scss';
